@@ -9,7 +9,6 @@ function onFormSubmit(event) {
     const elem = event.target.elements;
     const emailEl = elem.email.value;
     const emailPsw = elem.password.value;
-    console.log(emailEl, emailPsw);
 
     if (emailEl === '' || emailPsw === '') {
         alert('всі поля повинні бути заповнені');
@@ -21,9 +20,11 @@ function onFormSubmit(event) {
             password: emailPsw
         };
         console.log(objDataForm);
+         event.target.reset();
+
     };
     
-    event.target.reset();
+   
 }
 
 
