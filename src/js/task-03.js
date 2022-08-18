@@ -24,8 +24,6 @@ const img = images.map(image => {
   return liElem;
 })
 
-// elem.setAttribute(name, value)
-
 
 list.insertAdjacentHTML("beforeend", img.join('')); 
 console.log(list)
